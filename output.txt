@@ -1,0 +1,44 @@
+Mall Customer Segmentation API - Project Outputs
+
+1. Model Training Output
+Accuracy: 1.0
+Model saved successfully!
+
+2. API Endpoint
+POST /predict
+
+Example Request:
+{
+  "gender": 1,
+  "age": 25,
+  "annual_income": 60,
+  "spending_score": 80
+}
+
+Example Response:
+{
+  "segment": 1,
+  "segment_name": "High Value Customer"
+}
+
+3. Local API URL
+http://127.0.0.1:8000/docs
+
+4. Docker Commands
+docker build -t mall-customer-api .
+docker run -p 8000:8000 mall-customer-api
+
+5. Docker API URL
+http://localhost:8000/docs
+
+6. Project Files
+- Mall_Customers.csv
+- train_model.py
+- app.py
+- requirements.txt
+- Dockerfile
+- README.md
+- model.pkl
+
+Project Status:
+SUCCESSFULLY TRAINED, DEPLOYED WITH FASTAPI, AND CONTAINERIZED WITH DOCKER.
